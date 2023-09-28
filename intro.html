@@ -1,0 +1,106 @@
+<html>
+
+<head >
+<div class="di">
+<h1  class="hh" id="ni">MY INTRO</h1>
+<div id="lnk"><a href="more.html" >more<img src="harsh2.jpg"   width=60px ></a></div>
+<style>
+
+.name{
+background-color: skyblue;
+position: relative;
+top:20px;
+}
+
+
+
+.di{
+background-color:gold;
+}
+.hh{
+text-decoration: underline grey;
+color: red;
+position: relative;
+}
+#image{
+position: relative;
+left: 200px;
+right:200px;
+top:30px;
+}
+.gi{
+position:relative;
+top:10px;
+padding:10px;
+background-color: lightgreen;
+}
+#lnk{
+position:relative;
+top:200px;
+left:1170px;
+}
+</style>
+<img src="harsh.jpg" alt="coudnt" hieght=100px width=300px  id="image"></img>
+
+</div>
+
+</head>
+<body>
+<h1 align="center" class="gi">GENERAL INTRO</h1>
+<div class="name">
+<h1 >NAME: DEVENDRA KUMAR DUBEY</h1>
+<h2>DOB: 15/09/2003 <br><br>FROM: NCL khadia colony, sonebhadra (U.P.) <br><br> GRADUATE: Dr. Rammanohar Lohia Avadh university (I.E.T Faizabad)</h2>
+</div>
+
+</body>
+
+
+<script>
+let pos=0
+const px=2
+let mi= document.getElementById("ni")
+ip=setInterval (frame, 2)
+function frame(){
+if (pos==250){
+clearInterval(ip)
+}
+else{
+pos++;
+mi.style.left= pos+ px
+}
+}
+
+let pic=document.getElementById("image");
+
+let i=0
+cp= setInterval(frame2, 25);
+function frame2(){
+i++;
+if(i==81){
+
+clearInterval(cp)
+}
+else if(i==20){
+
+console.log(i);
+pic.style.transform=`rotate(90deg)`;
+}	
+else if(i==40){
+
+console.log(i);
+pic.style.transform=`rotate(180deg)`;
+}
+else if(i==60){
+console.log(i);
+pic.style.transform=`rotate(270deg)`;
+}
+else if(i==80){
+console.log(i);
+pic.style.transform=`rotate(360deg)`;
+}
+
+}
+
+
+</script>
+</html>

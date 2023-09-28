@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>"API"</title>
+</head>
+<body>
+<label>Enter ur name: </label>
+<input type="text" id="nameid" required><br>
+<img src="IMG-20210415-WA0017.jpg" id="changeimg" width=200px height=200px>
+<button>Click me.</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$('button').click(function(){
+const a= $('#nameid').val();
+
+$('#changeimg').attr('src',`https://avatars.abstractapi.com/v1/?api_key=4065d61d097e426d969785417fbe8c15&name= ${a}`);
+});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<html>
+<form>
+<head>
+
+<h1>PAYMENT FORM</h1>
+<style>
+h1{
+text-decoration:underline red;
+text-align: center;
+}
+
+*{
+
+box-size:border-box;
+padding:7px;
+box-size:border-box;
+background-color:azure;
+;
+}
+*{box-size:border-box;
+padding:15px;}
+.hars{
+background-color:wheat;
+
+padding:5px;
+width:20%;
+}
+.hars:hover{
+background-color: orange;
+cursor: grab;
+
+}
+.card{
+border-radius:4px;
+}
+.cvv{
+border-radius:4px;
+}
+.rest{
+border-radius:4px;
+background-color:silver;
+}
+.rest:hover{
+background-color:bisque;
+cursor: pointer;
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+<p>Card number: <input type="number" name="numb" required class="card" placeholder="7 digits"></input></p>
+<p>Card name:</p>
+<select name="Card name" required>
+<option value="">--Choose--</option>
+<option value="indian bank">Indian bank</option>
+<option value="sbi">SBI Credit card</option>
+</select>
+<br>
+<hr>
+
+<p>CVV: <input maxlength="3" type="number" name="CVV" required class="cvv" placeholder="3 digits" ></p>
+<input type="submit" value="Pay now" name="pay" class="hars"></input>
+<input type="reset" value="Reset" name="reseted" class="rest"></input>
+</body>
+</form>
+</html>
